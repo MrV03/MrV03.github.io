@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web.css">
+    <title>HelloWorld("print")</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script type="text/javascript" src="web.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #32FA32;
+            z-index: 2; /* Ensure the container is above the canvas */
+        }
+
+        .box {
+            border: 2px solid #32FA32;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            background-color: #000000; /* Add a background color for better visibility */
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        .message {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .styled-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #fff;
+            background-color: #3498db;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            border: none;
+            animation: shake 0.5s infinite;
+            z-index: 2; /* Ensure the button is above the canvas */
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #fff;
+            background-color: #27ae60; /* Green color for download button */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            border: none;
+            margin-right: 10px; /* Add some spacing between buttons */
+        }
+
+            .styled-button:hover,
+            .download-button:hover {
+                background-color: #2980b9;
+                animation: none; /* Disable shake on hover */
+            }
+
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+
+            25%, 75% {
+                transform: translateX(-5px);
+            }
+
+            50% {
+                transform: translateX(5px);
+            }
+        }
+
+        .canvas-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1; /* Set a lower z-index for the canvas */
+        }
+
+        canvas {
+            position: relative; /* Change from absolute to relative */
+        }
+    </style>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            var nodesjs = new NodesJs({
+                id: 'nodes',
+                width: window.innerWidth,
+                height: window.innerHeight,
+                particleSize: 4,
+                lineSize: 1,
+                particleColor: [50, 205, 50, 0.3],
+                lineColor: [50, 205, 50],
+                backgroundFrom: [50, 50, 50],
+                backgroundTo: [0, 0, 0],
+                backgroundDuration: 4000,
+                nobg: false,
+                number: window.hasOwnProperty('orientation') ? 30 : 100,
+                speed: 20
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Welcome to My Landing Page!</h1>
+            <p class="message">Thank You for visiting! Feel free to explore My portfolio or download My CV by clicking below. Alternatively, just have fun with the background. Your interest is appreciated. </p>
+            <a href="home.html" class="styled-button">Explore Portfolio</a>
+            <a href="Curriculum Vitae.pdf" class="download-button" download>View/Download CV</a>
+        </div>
+    </div>
+    <div class="canvas-container">
+        <canvas id="nodes"></canvas>
+    </div>
+    <div>
+        <!-- Additional Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </div>
+</body>
+
+</html>

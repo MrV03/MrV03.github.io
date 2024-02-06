@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Converter</title>
+    <link rel="stylesheet" href="number_converter.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Number Converter</h1>
+        <p>Choose the type of value you are entering:</p>
+        <div class="input-container">
+            <label for="conversionType">Type:</label>
+            <select id="conversionType">
+                <option value="binary">Binary</option>
+                <option value="decimal">Decimal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+            </select>
+        </div>
+        <div class="input-container">
+            <label for="numberInput">Enter a number:</label>
+            <input type="text" id="numberInput" placeholder="Enter a number">
+        </div>
+        <button onclick="convertNumber()">Convert</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="number_converter.js"></script>
+</body>
+</html>
