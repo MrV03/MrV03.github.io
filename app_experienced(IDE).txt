@@ -1,0 +1,29 @@
+Hand Tracker App - IDE Setup
+
+If you prefer using your Integrated Development Environment (IDE), follow these steps:
+
+1. Open the Project in Your IDE:
+
+Open your preferred Python IDE (e.g., PyCharm, Visual Studio Code).
+Open the Hand Tracker App project.
+
+2. Set Up a Virtual Environment:
+
+(Optional but recommended) Set up a virtual environment in your IDE.
+
+3. Install Dependencies:
+
+Install the required Python packages (opencv-python, Pillow, mediapipe) using your IDE's package manager or terminal.
+
+4. Run the app.py Script:
+
+Locate the app.py script in your project.
+Run the script within your IDE.
+
+5. Access the App:
+
+Open your web browser and go to http://127.0.0.1:5000/ to interact with the Hand Tracker App unless it opens automatically.
+
+6. Closing the App:
+
+To stop the app, return to your IDE and interrupt the script execution or press the appropriate stop button or close Your fist such that it is recognised by the program

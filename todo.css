@@ -1,0 +1,105 @@
+body {
+    font-family: 'Patrick Hand SC', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8e16c;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border: 5px solid #000;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: #333;
+    border-bottom: 1px solid #000;
+}
+
+li.completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+li span {
+    text-decoration: none;
+    padding-left: 10px;
+    list-style-type: disc;
+}
+
+li.completed span {
+    text-decoration: line-through;
+}
+
+li button {
+    text-decoration: none; /* Remove line-through from the button */
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button.clear-button {
+    background-color: #e74c3c;
+    border: 1px solid #e74c3c;
+}
+
+button.clear-button:hover {
+    background-color: #c0392b;
+}
