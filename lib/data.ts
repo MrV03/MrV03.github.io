@@ -18,6 +18,7 @@ export interface Project {
   title: string;
   tech: string;
   desc: string;
+  url?: string;
 }
 
 export const SKILL_GRAPH: SkillNode[] = [
@@ -109,8 +110,8 @@ export const PROJECTS: Project[] = [
   { 
     title: 'Campus Cart',
     tech: 'Cloud-Native Platform',
-    desc: 'Designed and built a scalable, cloud-ready student commerce platform focused on security, access control, and data privacy.'
-    <a href = https://campus-cart-lite.onrender.com><a/> 
+    desc: 'Designed and built a scalable, cloud-ready student commerce platform focused on security, access control, and data privacy.',
+    url: 'https://campus-cart-lite.onrender.com/home'
   },
   { 
     title: 'Hand Gesture Recognition',
@@ -245,6 +246,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     impact: 'Demonstrated applied understanding of data security, cryptography, and secure software development lifecycles.'
   }
 ];
+
 [
   {
     id: 'DB-9022',
