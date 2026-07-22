@@ -60,20 +60,22 @@ export default function Home() {
                 </p>
 
                 <p className="mt-6 text-sm md:text-base text-neutral-300 max-w-2xl leading-relaxed">
-                  Engineered for end-to-end execution. Writing production code across multiple languages, architecting resilient cloud and network infrastructure, and bridging technical depth with direct enterprise client impact.
+                  Engineered for end-to-end execution. Writing production code across multiple languages, architecting resilient cloud and network infrastructure, and bridging technical depth with[...]
                 </p>
 
                 <div className="flex flex-wrap gap-4 mt-8">
                   <button 
                     onClick={() => setActiveModule('missions')}
-                    className="px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-black font-semibold font-mono text-xs tracking-wider uppercase transition-all duration-300 flex items-center gap-2 shadow-[0_0_20px_rgba(6,182,212,0.4)]"
+                    className="px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-black font-semibold font-mono text-xs tracking-wider uppercase transition-all duration-300 flex items-center [...]
                   >
                     View Career Missions <ArrowRight className="w-4 h-4" />
                   </button>
                   <a 
-                    href="Vivek Maharaj CV-2.pdf"
-                    download
-                    className="px-6 py-3 rounded-xl glass-panel hover:bg-white/10 text-neutral-200 font-mono text-xs tracking-wider uppercase border border-white/10 transition-all duration-300 flex items-center gap-2"
+                    href="/Vivek Maharaj CV-2.pdf"
+                    download="Vivek Maharaj CV-2.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="px-6 py-3 rounded-xl glass-panel hover:bg-white/10 text-neutral-200 font-mono text-xs tracking-wider uppercase border border-white/10 transition-all duration-300 fle[...]
                   >
                     Download Executive CV <Download className="w-4 h-4" />
                   </a>
@@ -102,7 +104,8 @@ export default function Home() {
                   </div>
                 </a>
 
-                <a href="https://www.linkedin.com/in/vivek-maharaj-604a49220/" target="_blank" rel="noreferrer" className="flex items-center gap-3 p-3 rounded-xl bg-black/40 border border-white/5 hover:border-cyan-500/50 transition-all group">
+                <a href="https://www.linkedin.com/in/vivek-maharaj-604a49220/" target="_blank" rel="noreferrer" className="flex items-center gap-3 p-3 rounded-xl bg-black/40 border border-white/5[...]"
+                  >
                   <div className="p-2 rounded-lg bg-cyan-500/10 text-cyan-400 group-hover:scale-110 transition-transform">
                     <Linkedin className="w-4 h-4" />
                   </div>
@@ -112,7 +115,8 @@ export default function Home() {
                   </div>
                 </a>
 
-                <a href="https://github.com/MrV03" target="_blank" rel="noreferrer" className="flex items-center gap-3 p-3 rounded-xl bg-black/40 border border-white/5 hover:border-cyan-500/50 transition-all group">
+                <a href="https://github.com/MrV03" target="_blank" rel="noreferrer" className="flex items-center gap-3 p-3 rounded-xl bg-black/40 border border-white/5 hover:border-cyan-500/50 tr[...]"
+                  >
                   <div className="p-2 rounded-lg bg-cyan-500/10 text-cyan-400 group-hover:scale-110 transition-transform">
                     <Github className="w-4 h-4" />
                   </div>
@@ -180,7 +184,7 @@ export default function Home() {
               <div className="glass-panel p-6 rounded-2xl border border-white/10 space-y-2">
                 <h2 className="text-xl font-bold text-cyan-400 font-mono">Interactive Diagnostic Simulator</h2>
                 <p className="text-xs text-neutral-400">
-                  Step into real-world operational scenarios encountered in production. Test decision-making workflows under pressure and see how infrastructure failures are isolated and resolved.
+                  Step into real-world operational scenarios encountered in production. Test decision-making workflows under pressure and see how infrastructure failures are isolated and resolved[...]
                 </p>
               </div>
               <DebugSimulator />
@@ -299,7 +303,7 @@ export default function Home() {
                   <span className="text-xs font-mono text-cyan-300">Next.js 14 / Tailwind / Framer Motion</span>
                 </div>
                 <p className="text-sm text-neutral-300 leading-relaxed">
-                  You are currently interacting with it. A gamified, high-end operating system portfolio engineered to replace traditional static resumes with immersive technical storytelling and interactive diagnostics.
+                  You are currently interacting with it. A gamified, high-end operating system portfolio engineered to replace traditional static resumes with immersive technical storytelling and[...]
                 </p>
               </div>
 
