@@ -71,8 +71,8 @@ export default function Home() {
                     View Career Missions <ArrowRight className="w-4 h-4" />
                   </button>
                   <a 
-                    href="/Vivek Maharaj CV-2.pdf"
-                    download="Vivek Maharaj CV-2.pdf"
+                    href="/public/vivek-maharaj-cv-2.pdf"
+                    download="public/vivek-maharaj-cv-2.pdf"
                     target="_blank"
                     rel="noreferrer"
                     className="px-6 py-3 rounded-xl glass-panel hover:bg-white/10 text-neutral-200 font-mono text-xs tracking-wider uppercase border border-white/10 transition-all duration-300 fle[...]"
