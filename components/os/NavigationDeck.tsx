@@ -28,7 +28,7 @@ export default function NavigationDeck({ activeModule, setActiveModule }: NavPro
           </span>
         </div>
 
-        <nav className="flex items-center gap-1">
+        <nav className="flex items-center gap-1 overflow-x-auto px-2 py-1">
           {modules.map((m) => {
             const Icon = m.icon;
             const active = activeModule === m.id;
@@ -36,14 +36,14 @@ export default function NavigationDeck({ activeModule, setActiveModule }: NavPro
               <button
                 key={m.id}
                 onClick={() => setActiveModule(m.id)}
-                className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-mono transition-all duration-300 ${
+                className={`flex items-center gap-2 px-2 sm:px-4 py-2 rounded-full text-xs font-mono transition-all duration-300 ${
                   active
                     ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 shadow-[0_0_15px_rgba(6,182,212,0.2)]'
                     : 'text-neutral-400 hover:text-neutral-200 hover:bg-white/5'
                 }`}
               >
                 <Icon className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">{m.label}</span>
+                <span className="hidden md:inline">{m.label}</span>
               </button>
             );
           })}
