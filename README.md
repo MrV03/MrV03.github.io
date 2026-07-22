@@ -1,4 +1,4 @@
-# Vivek Maharaj OS Portfolio
+# Vivek Maharaj Portfolio
 
 A Next.js 14, Tailwind CSS, Three.js, and Framer Motion powered digital identity and command-center portfolio.
 
