@@ -110,6 +110,7 @@ export const PROJECTS: Project[] = [
     title: 'Campus Cart',
     tech: 'Cloud-Native Platform',
     desc: 'Designed and built a scalable, cloud-ready student commerce platform focused on security, access control, and data privacy.'
+    <a href = https://campus-cart-lite.onrender.com><a/> 
   },
   { 
     title: 'Hand Gesture Recognition',
