@@ -24,7 +24,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-[#050508] text-white relative font-sans selection:bg-cyan-500/30 pt-24 pb-16 px-4 md:px-8 max-w-7xl mx-auto overflow-hidden">
+    <div className="min-h-screen bg-[#050508] text-white relative font-sans selection:bg-cyan-500/30 pt-24 pb-16 px-4 md:px-8 max-w-7xl mx-auto overflow-hidden">
       
       {isMounted && <AmbientCanvas />}
 
@@ -66,7 +66,7 @@ export default function Home() {
                 <div className="flex flex-wrap gap-4 mt-8">
                   <button 
                     onClick={() => setActiveModule('missions')}
-                    className="px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-black font-semibold font-mono text-xs tracking-wider uppercase transition-all duration-300 flex items-center [...]
+                    className="px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-black font-semibold font-mono text-xs tracking-wider uppercase transition-all duration-300 flex items-center [...]"
                   >
                     View Career Missions <ArrowRight className="w-4 h-4" />
                   </button>
@@ -75,7 +75,7 @@ export default function Home() {
                     download="Vivek Maharaj CV-2.pdf"
                     target="_blank"
                     rel="noreferrer"
-                    className="px-6 py-3 rounded-xl glass-panel hover:bg-white/10 text-neutral-200 font-mono text-xs tracking-wider uppercase border border-white/10 transition-all duration-300 fle[...]
+                    className="px-6 py-3 rounded-xl glass-panel hover:bg-white/10 text-neutral-200 font-mono text-xs tracking-wider uppercase border border-white/10 transition-all duration-300 fle[...]"
                   >
                     Download Executive CV <Download className="w-4 h-4" />
                   </a>
@@ -326,6 +326,6 @@ export default function Home() {
 
         </AnimatePresence>
       </div>
-    </main>
+    </div>
   );
 }
